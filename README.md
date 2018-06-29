@@ -3,6 +3,11 @@ Dockerized version ONAP MUSIC development environment. Single container includin
 
 Simply clone the repo & hit `sudo docker build ./ -t"music-dev:beta"` which will result in a single docker image that contains all the dependencies for a single node music installation needed for development purpose.
 
+### Update 6/30:
+<table> <tr><td bgcolor=#DAF7A6>
+  Check the <b>development</b> branch for updated code. Will be merged with master post some tests
+  </td></tr></table>
+
 ## Quick start
 
 Clone the repo & init

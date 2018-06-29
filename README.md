@@ -12,6 +12,11 @@ git clone https://github.com/kspviswa/onap-music-dev
 cd onap-music-dev/music
 ```
 
+### Note :
+<table> <tr><td bgcolor=#DAF7A6>
+Following are needed to build your own docker image. I'm planning to push a fully cooked docker image ( ~850MB ) in dockerhub. Post which, you can simple do <code> sudo docker pull kspviswa/onap-music-dev:beta </code> and that's it. <br> Please stay tuned for more updates.
+  </td></tr></table>
+
 Download Zookeeper, Cassandra, Tomcat & Maven and fix the symlink
 
 ```

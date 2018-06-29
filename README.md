@@ -1,7 +1,7 @@
 # ONAP MUSIC Development Environment Container
 Dockerized version ONAP MUSIC development environment. Single container including MUSIC, Zookeeper, Cassandra single node installation and aptly configured.
 
-Simply clone the repo & hit `sudo docker build ./ -t"music-dev:beta"` which will result in a single docker image that contains all the dependencies for a single node music installation needed for development purpose.
+Simply clone the repo & hit `sudo docker build ./ -t"onap-music-dev:beta"` which will result in a single docker image that contains all the dependencies for a single node music installation needed for development purpose.
 
 ## Quick start
 
@@ -9,27 +9,19 @@ Clone the repo & init
 
 ```
 git clone https://github.com/kspviswa/onap-music-dev
-cd onap-music-dev/music
+cd onap-music-dev
 ```
 
-Download Zookeeper, Cassandra, Tomcat & Maven and fix the symlink
+Build the image
 
 ```
-ln -s ./apache-cassandra-n.n.n cassandra
-ln -s ./zookeeper-n.n.n zookeeper
-ln -s ./apache-tomcat-n.n.n tomcat
-```
-
-Now clone the MUSIC code from ONAP Gerrit
-
-```
-git clone https://gerrit.onap.org/r/music
+sudo docker build ./ -t"onap-music-dev:beta"
 ```
 
 Run the image
 
 ```
-sudo docker run -td music-dev:beta
+sudo docker run onap-music-dev:beta
 ```
 
 Now simply get into your container and start hacking your MUSIC Dev installation. As simple as that.

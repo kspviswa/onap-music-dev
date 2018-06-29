@@ -6,6 +6,9 @@ MAINTAINER Viswanath Kumar Skand Priya (kspviswa.github@gmail.com) version: 0.1
 
 ADD ./music /opt/app/music
 
+RUN apt-get update -qq
+RUN apt-get install -y git
+
 #ENTRYPOINT /bin/bash /opt/app/music/prepare.sh
 CMD ["/opt/app/music/prepare.sh"]
 

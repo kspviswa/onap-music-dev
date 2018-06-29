@@ -9,7 +9,7 @@ Clone the repo & init
 
 ```
 git clone https://github.com/kspviswa/onap-music-dev
-cd onap-music-dev
+cd onap-music-dev/music
 ```
 
 Download Zookeeper, Cassandra, Tomcat & Maven and fix the symlink
@@ -18,6 +18,12 @@ Download Zookeeper, Cassandra, Tomcat & Maven and fix the symlink
 ln -s ./apache-cassandra-n.n.n cassandra
 ln -s ./zookeeper-n.n.n zookeeper
 ln -s ./apache-tomcat-n.n.n tomcat
+```
+
+Now clone the MUSIC code from ONAP Gerrit
+
+```
+git clone https://gerrit.onap.org/r/music
 ```
 
 Run the image
